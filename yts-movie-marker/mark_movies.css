@@ -1,0 +1,116 @@
+
+.ymm_di {
+	display:inline !important;
+}
+
+ul.ymm_nav {
+    font-family: Arial, Verdana;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    //position: absolute;
+}
+
+ul.ymm_nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+li ul {
+    display: none;
+}
+
+ul.ymm_nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 1px;
+    background: #f7f7f7;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+ul.ymm_nav li a:hover {
+    background: #B0E0E6;
+    cursor: pointer;
+}
+
+ul.ymm_nav li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+ul.ymm_nav li:hover li {
+    float: none;
+    font-size: 11px;
+}
+
+
+#ymm_overlay {
+	z-index:100;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	font-size: 20;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.75);
+}
+
+.ymm_modal {
+	z-index: 110;
+	width: 500px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -250px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color: #f0f0f0;
+	border-radius: 8px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify-left;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px;
+	overflow: scroll;
+	border: 3px solid #6495ED;
+}
+
+.ymm_movierow {
+	font-family: Tahoma, Geneva, sans-serif;
+	/*font-weight: bold;*/
+	min-height: 40px;
+	line-height: 25px;
+	padding: 2px;
+	border-bottom: 1px solid #b96;
+	clear: both;
+	overflow: auto;
+}
+
+.ymm_movierow span {
+	margin: 15px 2px 5px 2px;
+	min-height: 40px;
+	float: left;
+	width: 300px;
+}
+
+.ymm_movierow a {
+	font-weight: normal;
+	display: inline-block;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.ymm_movierow a:hover {
+	color: #a22;
+}
+
+body {
+	position: relative;
+}

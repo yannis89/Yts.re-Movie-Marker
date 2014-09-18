@@ -1,0 +1,32 @@
+{
+	"manifest_version" : 2,
+	
+	"name" : "YTS Movie Marker",
+	
+	"description" : "Mark movies on yts.re",
+
+	"version" : "1.0",
+
+	"background" : {
+		"scripts" : ["background.js"]
+	},
+
+	"page_action" : {
+		"default_icon" : {
+			"19" : "images/tv.png"
+		},
+		"default_title": "Yts.re Movie Marker"
+	},
+
+	"content_scripts" : [
+		{
+			"matches" : ["http://yts.re/*", "https://yts.re/*"],
+			"js" : ["mark_movies.js"],
+			"css": ["mark_movies.css"],
+			"run_at" : "document_start"
+		}
+	],
+
+	"web_accessible_resources" : ["images/*.png"]
+
+}
